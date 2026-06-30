@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>Student Management System</h1>
+
+<input type="text" id="search" class="search" placeholder="Search student...">
+
+<div class="form">
+<input type="text" id="name" placeholder="Name">
+<input type="date" id="dob">
+<input type="text" id="grade" placeholder="Grade">
+<input type="text" id="subject" placeholder="Subject / Course">
+<button class="add-btn" onclick="addStudent()">Add</button>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>DOB</th>
+<th>Grade</th>
+<th>Subject</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="table"></tbody>
+</table>
+
+</div>
+
+<div id="editBox" class="edit-box">
+<h3>Edit Student</h3>
+
+<input type="text" id="editName">
+<input type="date" id="editDob">
+<input type="text" id="editGrade">
+<input type="text" id="editSubject">
+
+<button onclick="updateStudent()" class="save-btn">Save</button>
+<button onclick="closeEdit()" class="cancel-btn">Cancel</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
